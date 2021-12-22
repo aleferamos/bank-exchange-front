@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import {CardModule} from 'primeng/card';
 
 @NgModule({
   declarations: [],
@@ -14,11 +14,13 @@ import { CommonModule } from '@angular/common';
     FormsModule,
     InputTextModule,
     BrowserAnimationsModule,
+    CardModule,
   ],
   exports: [
     CalendarModule,
     FormsModule,
-    InputTextModule
+    InputTextModule,
+    CardModule
   ]
 })
 export class CoreModule { }
